@@ -14,7 +14,7 @@ public class ProductService {
 
     public List<Product> all() {return repo.findAll();}
     public Product one(Long id) {return repo.findById(id).orElseThrow();}
-    public Product save(Product P) {return repo.save(P);}
+    public Product save(Product p) {return repo.save(p);}
     public void delete(Long id) {repo.deleteById(id);}
 
 }
